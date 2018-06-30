@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Continents.NewsPage" xmlns:local="clr-namespace:Continents;assembly=Continents">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="20, 40, 20, 20" />
+            <On Platform="Android, WinPhone, Windows" Value="20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+   <ScrollView>
+    <StackLayout x:Name = "sLayout" 
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 Spacing="15">
+
+        <!--<local:NewsView ImageUrl="https://continents.us"
+                                 InfoText="Test news article. recently there has been as case of something happenig in the white house, news story. New accredtiation with wyoming state has a ppeared. "/>
+        <local:NewsView ImageUrl="https://www.wpproblems.com/wp-content/uploads/2017/03/how-to-update-URLS-image.jpg" 
+                                 InfoText="Xamarin.com for cross platform apps. Use this if you want to make apps on ios and android at the same time. "/>
+        <local:NewsView InfoText="Test news article" />-->
+
+    </StackLayout>
+   </ScrollView>
+</ContentPage>

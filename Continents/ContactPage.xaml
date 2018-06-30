@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Continents.ContactPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="20, 40, 20, 20" />
+            <On Platform="Android, WinPhone, Windows" Value="20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 Spacing="15">
+        <Entry x:Name="emailEntry" Placeholder="Email" Keyboard="Email" /> 
+        <Entry x:Name="subjectEntry" Placeholder="Subject" />
+        <Label Text="Please type your question below:" />
+        <Frame BorderColor="Gray" HasShadow="false" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Editor x:Name="bodyEntry" VerticalOptions="FillAndExpand" />
+        </Frame>
+        <Button x:Name="submitEntry" Text="Submit" Clicked="OnSubmit" Style="{StaticResource buttonStyle}" />
+     </StackLayout>
+  <!--<ScrollView Orientation = "Vertical" VerticalOptions="StartAndExpand">
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 Spacing="15">
+        <Label Text="Contact" />
+        <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Horizontal"
+                 Spacing="15">
+            <Button x:Name="customerSupportButton" Text="Customer Support" Clicked="OnCustomerSupport" />
+            <Button x:Name="feedbackButton" Text="Feedback" Clicked="OnFeedback" />
+        </StackLayout>
+        <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Horizontal"
+                 Spacing="15">
+            <Label Text="Voicemail Number:
+            (614) 358-7223" />
+            <Label Text="Fax Number:
+            (614) 358-7223" />
+        </StackLayout>
+        <Label Text="Mailing Address:
+            1985 Henderson Road, Suite 121, Columbus, Ohio, 43220 USA" />
+        <Label Text="Branches" />
+        <Label Text="United States of America" />
+        <Label Text="Follow Us" />
+        <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Horizontal"
+                 Spacing="15">
+            <WebView Source="https://www.facebook.com/continents.us/" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+            <WebView Source="https://twitter.com/continents_us" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </StackLayout>
+  </ScrollView>-->
+</ContentPage>

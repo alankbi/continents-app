@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Continents.NewsView">
+    <Frame BorderColor="Gray" HasShadow="false">
+    <!--<StackLayout x:Name="sLayout"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 Spacing="15">-->
+    <Grid x:Name="grid" VerticalOptions="Center" HorizontalOptions="FillAndExpand"> 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label x:Name="titleLabel" FontAttributes="Bold" FontSize="Large" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" VerticalTextAlignment="Center" />
+        <Label x:Name="imageUrl" IsVisible="false" />
+        <Image x:Name="image" Source="about_image.jpg" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" />
+        <Label x:Name="dateLabel" IsVisible="false" />
+        <Label x:Name="infoText" Text="News Article" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" VerticalTextAlignment="Center" />
+    </Grid>
+        <!--<Button x:Name="moreInfoButton" Text="More Info" Clicked="OnMoreInfo" Style="{StaticResource buttonStyle}" />-->
+    </Frame>
+</ContentView>

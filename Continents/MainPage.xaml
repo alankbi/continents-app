@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   x:Class="Continents.MainPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="20, 40, 20, 20" />
+            <On Platform="Android, WinPhone, Windows" Value="20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 Spacing="15">
+      <Button x:Name="newsButton" Text="Campus News" Clicked="OnNews" Style="{StaticResource buttonStyle}" />
+      <Button x:Name="admissionsButton" Text="Admissions" Clicked="OnAdmissions" Style="{StaticResource buttonStyle}" />
+      <Button x:Name="calendarButton" Text="Calendar" Clicked="OnCalendar" Style="{StaticResource buttonStyle}" />
+      <Button x:Name="myCampusButton" Text="My Campus" Clicked="OnMyCampus" Style="{StaticResource buttonStyle}" />
+      <Button x:Name="galleryButton" Text="Gallery" Clicked="OnGallery" Style="{StaticResource buttonStyle}" />
+      <Button x:Name="giveButton" Text="Give" Clicked="OnGive" Style="{StaticResource buttonStyle}" />
+      <Button x:Name="contactButton" Text="Contact Us" Clicked="OnContact" Style="{StaticResource buttonStyle}" />
+      <Button x:Name="socialMediaButton" Text="Social Media" Clicked="OnSocialMedia" Style="{StaticResource buttonStyle}" />
+      <Button x:Name="helpButton" Text="Help and Feedback" Clicked="OnHelp" Style="{StaticResource buttonStyle}" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,9 @@
+﻿{
+  "dependencies": {
+    "Newtonsoft.Json": "11.0.2",
+    "Xamarin.Forms": "3.0.0.530893"
+  },
+  "frameworks": {
+    ".NETPortable,Version=v4.5,Profile=Profile111": {}
+  }
+}

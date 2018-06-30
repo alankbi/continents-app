@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Continents.HelpPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="20, 40, 20, 20" />
+            <On Platform="Android, WinPhone, Windows" Value="20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+   <ScrollView>
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 Spacing="15">
+        <Label Text="FAQ and Feedback" />
+        <Label Text="Q: Question #1?" />
+        <Label Text="A: Answer #1." />
+        <Button x:Name="feedbackButton" Text="Submit Feedback" Clicked="OnFeedback" Style="{StaticResource buttonStyle}"/>
+     </StackLayout>
+    </ScrollView>
+</ContentPage>
