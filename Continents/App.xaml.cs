@@ -11,7 +11,6 @@ namespace Continents
         {
             InitializeComponent();
             MainPage = new NavigationPage(new MainPage());
-            //Button.fon
         }
 
         protected override void OnStart()
