@@ -60,8 +60,6 @@ namespace Continents
             InitializeComponent();
             infoText.LineBreakMode = LineBreakMode.TailTruncation;
             image.Source = ImageUrl;
-            System.Diagnostics.Debug.WriteLine(ImageUrl);
-            System.Diagnostics.Debug.WriteLine("HERE");
             grid.GestureRecognizers.Add(new TapGestureRecognizer { Command = new Command(() => { OnMoreInfo(); }) });
         }
 

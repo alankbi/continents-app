@@ -121,6 +121,7 @@
     <Compile Include="IEmailSender.cs" />
     <Compile Include="Article.cs" />
     <Compile Include="WebsiteCaller.cs" />
+    <Compile Include="ImageUrl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="project.json" />
