@@ -121,10 +121,22 @@
     <ImageAsset Include="Assets.xcassets\Contents.json" />
     <ImageAsset Include="Assets.xcassets\about_image.jpg.imageset\about_image.jpg" />
     <ImageAsset Include="Assets.xcassets\about_image.jpg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\twitter.png.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\twitter.png.imageset\twitter.png" />
+    <ImageAsset Include="Assets.xcassets\facebook.png.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\facebook.png.imageset\facebook.png" />
+    <ImageAsset Include="Assets.xcassets\youtube.png.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\youtube.png.imageset\youtube.png" />
+    <ImageAsset Include="Assets.xcassets\linkedin.png.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\linkedin.png.imageset\linkedin.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Assets.xcassets\about_image.jpg.imageset\" />
+    <Folder Include="Assets.xcassets\twitter.png.imageset\" />
+    <Folder Include="Assets.xcassets\facebook.png.imageset\" />
+    <Folder Include="Assets.xcassets\youtube.png.imageset\" />
+    <Folder Include="Assets.xcassets\linkedin.png.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />

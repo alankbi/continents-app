@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Continents.SocialMediaPage">
-    <ContentPage Title="Facebook">
+    <ContentPage Title="Facebook" Icon="facebook.png">
         <WebView Source="https://www.facebook.com/continents.us" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
     </ContentPage>
-    <ContentPage Title="Twitter">
+    <ContentPage Title="Twitter" Icon="twitter.png">
         <WebView Source="https://www.twitter.com/continents_us" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
     </ContentPage>
-    <ContentPage Title="YouTube">
+    <ContentPage Title="YouTube" Icon="youtube.png">
         <WebView Source="https://www.youtube.com/channel/UCuyvOPvVXOV3TCeeJiORtgg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
     </ContentPage>
-    <ContentPage Title="LinkedIn">
+    <ContentPage Title="LinkedIn" Icon="linkedin.png">
         <WebView Source="https://www.linkedin.com/school/the-continents-state-university" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
     </ContentPage>
 </TabbedPage>
