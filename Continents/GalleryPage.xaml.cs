@@ -34,7 +34,7 @@ namespace Continents
 
             for (int i = 0; i < result.Count; i++)
             {
-                grid.Children.Add(new WebView { Source = result[i].Url, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand }, 0, i);
+                grid.Children.Add(new Image { Source = result[i].Url, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand }, 0, i);
             }
 
             sLayout.Children.Add(grid);

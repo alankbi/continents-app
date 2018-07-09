@@ -37,8 +37,8 @@ namespace Continents
                 {
                     ImageUrl = article.ImageUrl,
                     InfoText = article.Body,
-                    Title = article.Title, 
-                    Date = article.Date
+                    Title = article.Title,
+                    Date = "Written on " + article.Date.ToString("D")
                 });
             }
         }
