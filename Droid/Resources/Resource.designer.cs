@@ -26,6 +26,16 @@ namespace Continents.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Com.Syncfusion.Calendar.Resource.Dimension.activity_horizontal_margin = global::Continents.Droid.Resource.Dimension.activity_horizontal_margin;
+			global::Com.Syncfusion.Calendar.Resource.Dimension.activity_vertical_margin = global::Continents.Droid.Resource.Dimension.activity_vertical_margin;
+			global::Com.Syncfusion.Calendar.Resource.Dimension.date_text_size = global::Continents.Droid.Resource.Dimension.date_text_size;
+			global::Com.Syncfusion.Calendar.Resource.Dimension.date_text_tab_size = global::Continents.Droid.Resource.Dimension.date_text_tab_size;
+			global::Com.Syncfusion.Calendar.Resource.Dimension.month_row_size = global::Continents.Droid.Resource.Dimension.month_row_size;
+			global::Com.Syncfusion.Calendar.Resource.Dimension.month_row_tab_size = global::Continents.Droid.Resource.Dimension.month_row_tab_size;
+			global::Com.Syncfusion.Calendar.Resource.Dimension.month_text_size = global::Continents.Droid.Resource.Dimension.month_text_size;
+			global::Com.Syncfusion.Calendar.Resource.Dimension.month_text_tab_size = global::Continents.Droid.Resource.Dimension.month_text_tab_size;
+			global::Com.Syncfusion.Calendar.Resource.String.sfcalendar_inlineviewalldaytext = global::Continents.Droid.Resource.String.sfcalendar_inlineviewalldaytext;
+			global::Com.Syncfusion.Calendar.Resource.String.sfcalendar_inlineviewnoappointmenttext = global::Continents.Droid.Resource.String.sfcalendar_inlineviewnoappointmenttext;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Continents.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -1705,6 +1715,12 @@ namespace Continents.Droid
 			// aapt resource value: 0x7f070010
 			public const int abc_text_size_title_material_toolbar = 2131165200;
 			
+			// aapt resource value: 0x7f070094
+			public const int activity_horizontal_margin = 2131165332;
+			
+			// aapt resource value: 0x7f070095
+			public const int activity_vertical_margin = 2131165333;
+			
 			// aapt resource value: 0x7f070009
 			public const int cardview_compat_inset_shadow = 2131165193;
 			
@@ -1713,6 +1729,12 @@ namespace Continents.Droid
 			
 			// aapt resource value: 0x7f07000b
 			public const int cardview_default_radius = 2131165195;
+			
+			// aapt resource value: 0x7f070096
+			public const int date_text_size = 2131165334;
+			
+			// aapt resource value: 0x7f070097
+			public const int date_text_tab_size = 2131165335;
 			
 			// aapt resource value: 0x7f070076
 			public const int design_appbar_elevation = 2131165302;
@@ -1863,6 +1885,18 @@ namespace Continents.Droid
 			
 			// aapt resource value: 0x7f070002
 			public const int item_touch_helper_swipe_escape_velocity = 2131165186;
+			
+			// aapt resource value: 0x7f07009a
+			public const int month_row_size = 2131165338;
+			
+			// aapt resource value: 0x7f07009b
+			public const int month_row_tab_size = 2131165339;
+			
+			// aapt resource value: 0x7f070098
+			public const int month_text_size = 2131165336;
+			
+			// aapt resource value: 0x7f070099
+			public const int month_text_tab_size = 2131165337;
 			
 			// aapt resource value: 0x7f070003
 			public const int mr_controller_volume_group_list_item_height = 2131165187;
@@ -3789,6 +3823,12 @@ namespace Continents.Droid
 			
 			// aapt resource value: 0x7f090028
 			public const int search_menu_title = 2131296296;
+			
+			// aapt resource value: 0x7f09003f
+			public const int sfcalendar_inlineviewalldaytext = 2131296319;
+			
+			// aapt resource value: 0x7f09003e
+			public const int sfcalendar_inlineviewnoappointmenttext = 2131296318;
 			
 			// aapt resource value: 0x7f090029
 			public const int status_bar_notification_info_overflow = 2131296297;

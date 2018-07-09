@@ -1,6 +1,7 @@
 ﻿{
   "dependencies": {
     "Newtonsoft.Json": "11.0.2",
+    "Syncfusion.Xamarin.SfCalendar": "16.2.0.42",
     "Xamarin.Forms": "3.0.0.530893"
   },
   "frameworks": {

@@ -20,7 +20,6 @@ namespace Continents
         public async void GetImages()
         {
             var json = await WebsiteCaller.ExecuteCall("https://continents-6124.restdb.io/rest/gallery");
-            System.Diagnostics.Debug.WriteLine(json);
 
             dynamic response = JArray.Parse(json);
             List<ImageUrl> result = response.ToObject<List<ImageUrl>>();

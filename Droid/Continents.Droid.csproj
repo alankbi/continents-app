@@ -109,6 +109,18 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.Licensing">
+      <HintPath>..\packages\Syncfusion.Licensing.16.2.0.42\lib\MonoAndroid10\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCalendar.Android">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCalendar.16.2.0.42\lib\MonoAndroid10\Syncfusion.SfCalendar.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCalendar.XForms.Android">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCalendar.16.2.0.42\lib\MonoAndroid10\Syncfusion.SfCalendar.XForms.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCalendar.XForms">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCalendar.16.2.0.42\lib\MonoAndroid10\Syncfusion.SfCalendar.XForms.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Continents\Continents.csproj">

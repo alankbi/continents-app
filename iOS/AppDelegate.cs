@@ -13,6 +13,7 @@ namespace Continents.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            new Syncfusion.SfCalendar.XForms.iOS.SfCalendarRenderer();
 
             LoadApplication(new App());
 

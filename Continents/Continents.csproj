@@ -122,6 +122,7 @@
     <Compile Include="Article.cs" />
     <Compile Include="WebsiteCaller.cs" />
     <Compile Include="ImageUrl.cs" />
+    <Compile Include="CalendarEvent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="project.json" />

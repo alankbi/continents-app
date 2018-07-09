@@ -27,7 +27,6 @@ namespace Continents
         public async void LoadArticles()
         {
             var json = await WebsiteCaller.ExecuteCall("https://continents-6124.restdb.io/rest/news-articles");
-            System.Diagnostics.Debug.WriteLine(json);
 
             dynamic response = JArray.Parse(json);
             var result = response.ToObject<List<Article>>();
