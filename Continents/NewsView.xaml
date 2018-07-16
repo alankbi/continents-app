@@ -6,23 +6,22 @@
                  HorizontalOptions="FillAndExpand"
                  Orientation="Vertical"
                  Spacing="15">-->
-    <Grid x:Name="grid" VerticalOptions="Center" HorizontalOptions="FillAndExpand"> 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <Label x:Name="titleLabel" FontAttributes="Bold" FontSize="Large" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" VerticalTextAlignment="Center" />
-        <Label x:Name="imageUrl" IsVisible="false" />
-        <Image x:Name="image" Source="about_image.jpg" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" />
-        <Label x:Name="dateLabel" IsVisible="false" />
-        <Label x:Name="infoText" Text="News Article" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" VerticalTextAlignment="Center" />
-    </Grid>
-        <!--<Button x:Name="moreInfoButton" Text="More Info" Clicked="OnMoreInfo" Style="{StaticResource buttonStyle}" />-->
+        <Grid x:Name="grid" VerticalOptions="Center" HorizontalOptions="Fill"> 
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label x:Name="titleLabel" FontAttributes="Bold" FontSize="Large" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" />
+            <Label x:Name="imageUrl" IsVisible="false" />
+            <Image x:Name="image" Source="about_image.jpg" Aspect="AspectFill" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" />
+            <Label x:Name="dateLabel" IsVisible="false" />
+            <Label x:Name="infoText" Text="News Article" LineBreakMode="WordWrap" Grid.Row="2" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="3" />
+        </Grid>
     </Frame>
 </ContentView>

@@ -14,9 +14,9 @@
                  Spacing="15">
 
             <Label x:Name="titleLabel" FontSize="Large" FontAttributes="Bold"/>
-            <Image x:Name="image" Source="about_image.jpg" />
+            <Image x:Name="image" Source="about_image.jpg" Aspect="AspectFill"/>
             <Label x:Name="dateLabel" FontSize="Small" TextColor="Gray" />
-            <Label x:Name="infoTextLabel" FontSize="Medium" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+            <Label x:Name="infoTextLabel" FontSize="Medium" VerticalOptions="FillAndExpand" WidthRequest="150" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

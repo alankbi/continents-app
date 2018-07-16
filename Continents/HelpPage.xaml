@@ -11,7 +11,7 @@
                  HorizontalOptions="FillAndExpand"
                  Orientation="Vertical"
                  Spacing="15">
-        <Label Text="FAQ and Feedback" />
+        <Label Text="FAQ and Feedback" FontAttributes="Bold" FontSize="Large"/>
         <Label Text="Q: Question #1?" />
         <Label Text="A: Answer #1." />
         <Button x:Name="feedbackButton" Text="Submit Feedback" Clicked="OnFeedback" Style="{StaticResource buttonStyle}"/>
