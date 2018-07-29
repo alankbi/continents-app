@@ -18,6 +18,8 @@ namespace Continents
 {
     public partial class NewsPage : ContentPage
     {
+        private WebView webView;
+
         public NewsPage()
         {
             InitializeComponent();
@@ -40,14 +42,32 @@ namespace Continents
             body.RemoveAllChildren();
             body.AppendChild(content);
 
-            var webView = new WebView
+            var htmlSource = new HtmlWebViewSource
             {
-                Source = new HtmlWebViewSource
-                {
-                    Html = doc.DocumentNode.OuterHtml
-                }
+                Html = doc.DocumentNode.OuterHtml
             };
+
+            webView = new WebView
+            {
+                Source = htmlSource
+            };
+
+            ToolbarItems.Add(new ToolbarItem("<", null, () => { HandleBackButtonClicked(htmlSource); }));
+            ToolbarItems.Add(new ToolbarItem(">", null, () => { webView.GoForward(); }));
+
             this.Content = webView;
+        }
+
+        void HandleBackButtonClicked(HtmlWebViewSource defaultPage)
+        {
+            if (webView.CanGoBack)
+            {
+                webView.GoBack();
+            }
+            else
+            {
+                webView.Source = defaultPage;
+            }
         }
 
         public async void LoadArticles()

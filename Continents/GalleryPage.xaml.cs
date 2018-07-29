@@ -33,21 +33,33 @@ namespace Continents
             var body = doc.DocumentNode.Descendants("body").FirstOrDefault();
             body.RemoveAllChildren();
             body.AppendChild(content);
-            System.Diagnostics.Debug.WriteLine(body.InnerHtml);
+
+            var htmlSource = new HtmlWebViewSource
+            {
+                Html = doc.DocumentNode.OuterHtml
+            };
 
             webView = new WebView
             {
-                Source = new HtmlWebViewSource
-                {
-                    Html = doc.DocumentNode.OuterHtml
-                },
-                VerticalOptions = LayoutOptions.FillAndExpand,
-                HorizontalOptions = LayoutOptions.FillAndExpand
+                Source = htmlSource
             };
 
-            ToolbarItems.Add(new ToolbarItem("<", null, () => { webView.GoBack(); }));
+            ToolbarItems.Add(new ToolbarItem("<", null, () => { HandleBackButtonClicked(htmlSource); }));
             ToolbarItems.Add(new ToolbarItem(">", null, () => { webView.GoForward(); }));
-            sLayout.Children.Add(webView);
+
+            this.Content = webView;
+        }
+
+        void HandleBackButtonClicked(HtmlWebViewSource defaultPage)
+        {
+            if (webView.CanGoBack)
+            {
+                webView.GoBack();
+            }
+            else
+            {
+                webView.Source = defaultPage;
+            }
         }
 
         public async void GetImages()

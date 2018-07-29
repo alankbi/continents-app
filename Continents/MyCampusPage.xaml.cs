@@ -12,6 +12,9 @@ namespace Continents
             InitializeComponent();
             Title = "My Campus";
             NavigationPage.SetBackButtonTitle(this, "Back");
+
+            ToolbarItems.Add(new ToolbarItem("<", null, () => { webView.GoBack(); }));
+            ToolbarItems.Add(new ToolbarItem(">", null, () => { webView.GoForward(); }));
         }
     }
 }
