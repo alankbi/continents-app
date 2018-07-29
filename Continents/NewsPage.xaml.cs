@@ -23,12 +23,12 @@ namespace Continents
             InitializeComponent();
             Title = "Campus News";
             //LoadArticles();
-            LoadArticlesFromContinents();
+            LoadArticlesFromWebsite();
 
             NavigationPage.SetBackButtonTitle(this, "Back");
         }
 
-        public async void LoadArticlesFromContinents()
+        public async void LoadArticlesFromWebsite()
         {
             var web = new HtmlWeb();
             var doc = await web.LoadFromWebAsync("https://continents.us/news/");

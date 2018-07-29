@@ -1,25 +1,53 @@
 ﻿using System;
 using System.Collections.Generic;
 
+using System.Linq;
 using Newtonsoft.Json.Linq;
 
 using Xamarin.Forms;
+
+using HtmlAgilityPack;
 
 namespace Continents
 {
     public partial class GalleryPage : ContentPage
     {
+        private WebView webView;
         public GalleryPage()
         {
             InitializeComponent();
             Title = "Gallery";
             NavigationPage.SetBackButtonTitle(this, "Back");
             //GetImages();
-            var wv = new WebView
+            GetImagesFromWebsite();
+        }
+
+        public async void GetImagesFromWebsite()
+        {
+            var web = new HtmlWeb();
+            var doc = await web.LoadFromWebAsync("https://continents.us/photos/");
+
+            var content = doc.DocumentNode.Descendants("div").FirstOrDefault(x => x.Attributes.Contains("class") && x.Attributes["class"].Value.Equals("content-page"));
+            doc.DocumentNode.Descendants("div").FirstOrDefault(x => x.Attributes.Contains("class") && x.Attributes["class"].Value.Contains("section-head")).Remove();
+
+            var body = doc.DocumentNode.Descendants("body").FirstOrDefault();
+            body.RemoveAllChildren();
+            body.AppendChild(content);
+            System.Diagnostics.Debug.WriteLine(body.InnerHtml);
+
+            webView = new WebView
             {
-                Source = "https://www.continents.us/photos"
+                Source = new HtmlWebViewSource
+                {
+                    Html = doc.DocumentNode.OuterHtml
+                },
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                HorizontalOptions = LayoutOptions.FillAndExpand
             };
-            this.Content = wv;
+
+            ToolbarItems.Add(new ToolbarItem("<", null, () => { webView.GoBack(); }));
+            ToolbarItems.Add(new ToolbarItem(">", null, () => { webView.GoForward(); }));
+            sLayout.Children.Add(webView);
         }
 
         public async void GetImages()

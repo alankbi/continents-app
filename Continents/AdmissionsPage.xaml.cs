@@ -19,12 +19,6 @@ namespace Continents
             browser.Source = htmlSource;
             this.Content = browser;
 
-            test();
-        }
-        public async void test()
-        {
-            string json = await WebsiteCaller.ExecuteCall("https://teamscode.com/assets/problem_pdfs/TextAdventure.java");
-            System.Diagnostics.Debug.WriteLine(json);
         }
     }
 }
