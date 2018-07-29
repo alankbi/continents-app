@@ -12,6 +12,8 @@ using Newtonsoft.Json.Linq;
 
 using Xamarin.Forms;
 
+using HtmlAgilityPack;
+
 namespace Continents
 {
     public partial class NewsPage : ContentPage
@@ -21,13 +23,21 @@ namespace Continents
             InitializeComponent();
             Title = "Campus News";
             //LoadArticles();
-            var wv = new WebView
-            {
-                Source = "https://www.continents.us/news/"
-            };
-            this.Content = wv;
+            LoadArticlesFromContinents();
 
             NavigationPage.SetBackButtonTitle(this, "Back");
+        }
+
+        public async void LoadArticlesFromContinents()
+        {
+            var web = new HtmlWeb();
+            var doc = await web.LoadFromWebAsync("https://continents.us/news/");
+            var container = doc.DocumentNode.Descendants("div").FirstOrDefault(x => x.Attributes.Contains("class") && x.Attributes["class"].Value.Equals("content-page"));
+            var webView = new WebView
+            {
+                Source = container.OuterHtml
+            };
+            this.Content = webView;
         }
 
         public async void LoadArticles()
