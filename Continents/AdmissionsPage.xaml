@@ -7,7 +7,8 @@
         </OnPlatform>
     </ContentPage.Padding>
     <ScrollView Orientation = "Vertical" VerticalOptions="StartAndExpand">
-        <StackLayout VerticalOptions="FillAndExpand"
+        <StackLayout x:Name="sLayout"
+                 VerticalOptions="FillAndExpand"
                  HorizontalOptions="FillAndExpand"
                  Orientation="Vertical"
                  Spacing="15">

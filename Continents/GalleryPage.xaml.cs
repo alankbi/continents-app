@@ -14,7 +14,12 @@ namespace Continents
             InitializeComponent();
             Title = "Gallery";
             NavigationPage.SetBackButtonTitle(this, "Back");
-            GetImages();
+            //GetImages();
+            var wv = new WebView
+            {
+                Source = "https://www.continents.us/photos"
+            };
+            this.Content = wv;
         }
 
         public async void GetImages()

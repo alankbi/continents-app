@@ -20,7 +20,13 @@ namespace Continents
         {
             InitializeComponent();
             Title = "Campus News";
-            LoadArticles();
+            //LoadArticles();
+            var wv = new WebView
+            {
+                Source = "https://www.continents.us/news/"
+            };
+            this.Content = wv;
+
             NavigationPage.SetBackButtonTitle(this, "Back");
         }
 
