@@ -32,10 +32,20 @@ namespace Continents
         {
             var web = new HtmlWeb();
             var doc = await web.LoadFromWebAsync("https://continents.us/news/");
-            var container = doc.DocumentNode.Descendants("div").FirstOrDefault(x => x.Attributes.Contains("class") && x.Attributes["class"].Value.Equals("content-page"));
+
+            var content = doc.DocumentNode.Descendants("div").FirstOrDefault(x => x.Attributes.Contains("class") && x.Attributes["class"].Value.Equals("content-page"));
+            doc.DocumentNode.Descendants("div").FirstOrDefault(x => x.Attributes.Contains("class") && x.Attributes["class"].Value.Equals("section-head")).Remove();
+
+            var body = doc.DocumentNode.Descendants("body").FirstOrDefault();
+            body.RemoveAllChildren();
+            body.AppendChild(content);
+
             var webView = new WebView
             {
-                Source = container.OuterHtml
+                Source = new HtmlWebViewSource
+                {
+                    Html = doc.DocumentNode.OuterHtml
+                }
             };
             this.Content = webView;
         }
