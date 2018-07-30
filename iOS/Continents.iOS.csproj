@@ -133,6 +133,8 @@
     <ImageAsset Include="Assets.xcassets\youtube.png.imageset\youtube.png" />
     <ImageAsset Include="Assets.xcassets\linkedin.png.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\linkedin.png.imageset\linkedin.png" />
+    <ImageAsset Include="Assets.xcassets\continents_logo.png.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\continents_logo.png.imageset\continents_logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -141,6 +143,7 @@
     <Folder Include="Assets.xcassets\facebook.png.imageset\" />
     <Folder Include="Assets.xcassets\youtube.png.imageset\" />
     <Folder Include="Assets.xcassets\linkedin.png.imageset\" />
+    <Folder Include="Assets.xcassets\continents_logo.png.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />

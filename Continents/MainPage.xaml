@@ -8,13 +8,14 @@
             <On Platform="Android, WinPhone, Windows" Value="20" />
         </OnPlatform>
     </ContentPage.Padding>
-    <StackLayout VerticalOptions="FillAndExpand"
+    <StackLayout x:Name="sLayout"
+                 VerticalOptions="FillAndExpand"
                  HorizontalOptions="FillAndExpand"
                  Orientation="Vertical"
                  Spacing="15">
       <Button x:Name="newsButton" Text="Campus News" Clicked="OnNews" Style="{StaticResource buttonStyle}" />
       <Button x:Name="admissionsButton" Text="Admissions" Clicked="OnAdmissions" Style="{StaticResource buttonStyle}" />
-      <Button x:Name="calendarButton" Text="Calendar" Clicked="OnCalendar" Style="{StaticResource buttonStyle}" />
+      <!--<Button x:Name="calendarButton" Text="Calendar" Clicked="OnCalendar" Style="{StaticResource buttonStyle}" />-->
       <Button x:Name="myCampusButton" Text="My Campus" Clicked="OnMyCampus" Style="{StaticResource buttonStyle}" />
       <Button x:Name="galleryButton" Text="Gallery" Clicked="OnGallery" Style="{StaticResource buttonStyle}" />
       <Button x:Name="giveButton" Text="Give" Clicked="OnGive" Style="{StaticResource buttonStyle}" />

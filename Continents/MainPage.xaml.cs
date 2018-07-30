@@ -12,8 +12,7 @@ namespace Continents
             InitializeComponent();
             Title = "Continents State University";
             NavigationPage.SetBackButtonTitle(this, "Back");
-            //((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.Red;
-            BackgroundImage = "about_image.jpg";
+            //BackgroundImage = "continents_logo.png";
         }
 
         async void OnNews()

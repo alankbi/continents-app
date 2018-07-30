@@ -29,10 +29,14 @@ namespace Continents
 
             var content = doc.DocumentNode.Descendants("div").FirstOrDefault(x => x.Attributes.Contains("class") && x.Attributes["class"].Value.Equals("content-page"));
             doc.DocumentNode.Descendants("div").FirstOrDefault(x => x.Attributes.Contains("class") && x.Attributes["class"].Value.Contains("section-head")).Remove();
+            doc.DocumentNode.Descendants("div").FirstOrDefault(x => x.Attributes.Contains("id") && x.Attributes["id"].Value.Equals("header_container")).Remove();
+            doc.DocumentNode.Descendants("a").FirstOrDefault(x => x.Attributes.Contains("class") && x.Attributes["class"].Value.Equals("SideBarButton")).Remove();
+            doc.DocumentNode.Descendants("div").FirstOrDefault(x => x.Attributes.Contains("id") && x.Attributes["id"].Value.Equals("footer")).Remove();
 
             var body = doc.DocumentNode.Descendants("body").FirstOrDefault();
-            body.RemoveAllChildren();
-            body.AppendChild(content);
+            //body.RemoveAllChildren();
+            //body.AppendChild(content);
+            System.Diagnostics.Debug.WriteLine(doc.DocumentNode.OuterHtml);
 
             var htmlSource = new HtmlWebViewSource
             {
