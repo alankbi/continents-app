@@ -34,9 +34,6 @@ namespace Continents
             doc.DocumentNode.Descendants("div").FirstOrDefault(x => x.Attributes.Contains("id") && x.Attributes["id"].Value.Equals("footer")).Remove();
 
             var body = doc.DocumentNode.Descendants("body").FirstOrDefault();
-            //body.RemoveAllChildren();
-            //body.AppendChild(content);
-            System.Diagnostics.Debug.WriteLine(doc.DocumentNode.OuterHtml);
 
             var htmlSource = new HtmlWebViewSource
             {
