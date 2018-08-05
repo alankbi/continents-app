@@ -14,16 +14,42 @@
         <Label Text="FAQ and Feedback" FontAttributes="Bold" FontSize="Large"/>
         <Label Text="Q: How much is tuition to study in Continents Academy?" />
         <Label Text="A: While we work to keep our school with zero tuition but we still charging our students simple fees to cover ongoing expenses." />
-        <Label Text="Q: Question #2?" />
-        <Label Text="A: Answer #2." />
-        <Label Text="Q: Question #3?" />
-        <Label Text="A: Answer #3." />
-        <Label Text="Q: Question #4?" />
-        <Label Text="A: Answer #4." />
-        <Label Text="Q: Question #5?" />
-        <Label Text="A: Answer #5." />
-        <Label Text="Q: Question #6?" />
-        <Label Text="A: Answer #6." />
+        <Label Text="Q: Do you offer financial aid?" />
+        <Label Text="A: As long as we offer tuition free education, then we are non-allowed to offer any financial assistance, but we do offer programs of helping students who can't afford our simple fees and waive admission processing, books or graduation fees." />
+        <Label Text="Q: How does financial assistance work?" />
+        <Label Text="A: If you qualified to receive financial assistance, you will be notified by the school based on the outcome of your answers to the admission application and after you submit proof of income and other required documentation as required by Continents Academy." />
+        <Label Text="Q: Is there an entrance exam?" />
+        <Label Text="A: We do not required students to engage in entrance exam, whoever Continents Academy reserve the rights to add entrance exam as admission requirements any time without prior notice." />
+        <Label Text="Q: Is Continents Academy approved to operate as postsecondary institution?" />
+        <Label Text="A: Continents Academy approved by Ohio State Board of Career Colleges and Schools since 2016 to operate as online higher education postsecondary school, registration number 2094." />
+        <Label Text="Q: Is Continents Academy accredited?" />
+        <Label Text="A: Continents Academy programmatically accredited, each program offered through Continents Academy accredited through their prospective provider." />
+        <Label Text="Q: Is Continents Academy accredited by Better Business Bureau (BBB)?" />
+        <Label Text="A: Yes, Continents Academy accredited by the Better Business Bureau (BBB)." />
+        <Label Text="Q: Is Continents Academy offer any other governmental financial assistance?" />
+        <Label Text="A: Yes, Continents Academy approved by The United States Department of Defense and My Career Advancement Account Scholarship Program to cover United States eligible military spouses to study for free 100% including but not limit to books, exam fees, graduation fees and placement fees." />
+        <Label Text="Q: Dose Continents Academy have physical office in Ohio?" />
+        <Label Text="A: Continents Academy approved by all Ohio agencies to operate as online school and not required to have physical office, as long as we meet the operation requirements as online school." />
+        <Label Text="Q: Is Continents Academy accredited by workforce development department in Ohio?" />
+        <Label Text="A: Yes, Continents Academy approved by Ohio Means Jobs (Columbus) in Franklin County as accredited provider." />
+        <Label Text="Q: Dose Continents Academy have any presence outside the United States?" />
+        <Label Text="A: Continents Academy do not have any office outside the United States, whoever Continents Academy may conduct partnership with authorized institution outside the United States." />
+        <Label Text="Q: Should I visit the school before I apply?" />
+        <Label Text="A: You are highly encourage you to visit the school website, whoever we do not accept any walk-in through our address, as it's virtual address." />
+        <Label Text="Q: Can I get a degree from Continents Academy?" />
+        <Label Text="A: Continents Academy approved and programmatically accredited to award certificate and diploma in career education." />
+        <Label Text="Q: Can I schedule an appointment to talk with an admissions representative?" />
+        <Label Text="A: We highly recommend our potential students to contact Continents Academy by email as we have trained admission staff to communicate and answer all students' questions." />
+        <Label Text="Q: Do Continents Academy offer online courses?" />
+        <Label Text="A: Yes, Continents Academy approved by State of Ohio and other States agencies like (Washington, Massachusetts and Alaska) to operate as online institution." />
+        <Label Text="Q: How do I apply to study in Continents Academy?" />
+        <Label Text="A: Recently Continents Academy developed clean outlined simple admission application to help future students apply in less than 2 minutes." />
+        <Label Text="Q: What happens after I apply?" />
+        <Label Text="A: You will receive welcome within 3-5 business days including the next step what would be." />
+        <Label Text="Q: What is the selection process for students?" />
+        <Label Text="A: Continents Academy do not involve in any selection process, as long as the students meet the minimum admission requirements stated by the State of Ohio." />
+        <Label Text="Q: I have more questions! Who do I ask?" />
+        <Label Text="A: You're encouraged to contact our admission office with all type of questions you may have." />
         <Button x:Name="feedbackButton" Text="Submit Feedback" Clicked="OnFeedback" Style="{StaticResource buttonStyle}"/>
      </StackLayout>
     </ScrollView>

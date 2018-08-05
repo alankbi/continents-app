@@ -16,7 +16,7 @@ namespace Continents
         public CalendarPage()
         {
             InitializeComponent();
-            Title = "Calendar";
+            Title = "Events";
             NavigationPage.SetBackButtonTitle(this, "Back");
             // calendar.Locale = new System.Globalization.CultureInfo("en-US");
             GetEventsFromWebsite();
