@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Continents.GivePage">
-    <WebView x:Name="webView" Source="https://www.paypal.com/fundraiser/charity/1258313" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+    <WebView x:Name="webView" Source="https://www.continents.us/link/paypal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
 </ContentPage>

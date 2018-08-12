@@ -8,6 +8,7 @@
             <On Platform="Android, WinPhone, Windows" Value="20" />
         </OnPlatform>
     </ContentPage.Padding>
+   <ScrollView>
     <StackLayout x:Name="sLayout"
                  VerticalOptions="FillAndExpand"
                  HorizontalOptions="FillAndExpand"
@@ -23,4 +24,5 @@
       <Button x:Name="socialMediaButton" Text="Social Media" Clicked="OnSocialMedia" Style="{StaticResource buttonStyle}" />
       <Button x:Name="helpButton" Text="Help and Feedback" Clicked="OnHelp" Style="{StaticResource buttonStyle}" />
     </StackLayout>
+   </ScrollView>
 </ContentPage>

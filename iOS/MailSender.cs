@@ -10,7 +10,7 @@ namespace Continents.iOS
     {
         public void SendEmail(string subject, string body)
         {
-            MailMessage mm = new MailMessage("orsonfakeemail@gmail.com", "orsonfakeemail@gmail.com");
+            MailMessage mm = new MailMessage("orsonfakeemail@gmail.com", "custserv@continents.us");
             mm.Subject = subject;
             mm.Body = body;
 

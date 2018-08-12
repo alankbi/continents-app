@@ -16,7 +16,7 @@ namespace Continents
 
         void OnSubmit()
         {
-            if (String.IsNullOrEmpty(emailEntry.Text) || // fix to chck null
+            if (String.IsNullOrEmpty(emailEntry.Text) ||
                 String.IsNullOrEmpty(subjectEntry.Text) ||
                 String.IsNullOrEmpty(bodyEntry.Text))
             {
@@ -27,7 +27,7 @@ namespace Continents
                 var mail = DependencyService.Get<IEmailSender>();
                 try
                 {
-                    mail.SendEmail("Contact Form: " + subjectEntry.Text, "Email: " + emailEntry.Text + "\n\n" + bodyEntry.Text);
+                    mail.SendEmail("Mobile Contact Form: " + subjectEntry.Text, "Email: " + emailEntry.Text + "\n\n" + bodyEntry.Text);
                 }
                 catch (Exception e)
                 {
