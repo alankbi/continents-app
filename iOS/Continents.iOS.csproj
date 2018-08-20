@@ -136,6 +136,9 @@
     <ImageAsset Include="Assets.xcassets\linkedin.png.imageset\linkedin.png" />
     <ImageAsset Include="Assets.xcassets\continents_logo.png.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\continents_logo.png.imageset\continents_logo.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\continents_logo120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\continents_logo1024.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\continents_logo76.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />

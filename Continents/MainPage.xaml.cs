@@ -10,7 +10,7 @@ namespace Continents
         public MainPage()
         {
             InitializeComponent();
-            Title = "Continents State University";
+            Title = "Welcome to the Continents!";
             NavigationPage.SetBackButtonTitle(this, "Back");
             //BackgroundImage = "continents_logo.png";
         }

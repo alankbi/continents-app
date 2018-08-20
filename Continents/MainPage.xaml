@@ -8,21 +8,22 @@
             <On Platform="Android, WinPhone, Windows" Value="20" />
         </OnPlatform>
     </ContentPage.Padding>
-   <ScrollView>
+   <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
     <StackLayout x:Name="sLayout"
-                 VerticalOptions="FillAndExpand"
+                 VerticalOptions="StartAndExpand"
                  HorizontalOptions="FillAndExpand"
                  Orientation="Vertical"
-                 Spacing="15">
-      <Button x:Name="newsButton" Text="Campus News" Clicked="OnNews" Style="{StaticResource buttonStyle}" />
-      <Button x:Name="admissionsButton" Text="Admissions" Clicked="OnAdmissions" Style="{StaticResource buttonStyle}" />
-      <Button x:Name="calendarButton" Text="Events" Clicked="OnCalendar" Style="{StaticResource buttonStyle}" />
-      <Button x:Name="myCampusButton" Text="My Campus" Clicked="OnMyCampus" Style="{StaticResource buttonStyle}" />
-      <Button x:Name="galleryButton" Text="Gallery" Clicked="OnGallery" Style="{StaticResource buttonStyle}" />
-      <Button x:Name="giveButton" Text="Give" Clicked="OnGive" Style="{StaticResource buttonStyle}" />
-      <Button x:Name="contactButton" Text="Contact Us" Clicked="OnContact" Style="{StaticResource buttonStyle}" />
-      <Button x:Name="socialMediaButton" Text="Social Media" Clicked="OnSocialMedia" Style="{StaticResource buttonStyle}" />
-      <Button x:Name="helpButton" Text="Help and Feedback" Clicked="OnHelp" Style="{StaticResource buttonStyle}" />
+                 Spacing="15">  
+          <Button x:Name="newsButton" Text="Campus News" Clicked="OnNews" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="admissionsButton" Text="Admissions" Clicked="OnAdmissions" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="calendarButton" Text="Events" Clicked="OnCalendar" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="myCampusButton" Text="My Campus" Clicked="OnMyCampus" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="galleryButton" Text="Gallery" Clicked="OnGallery" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="giveButton" Text="Give" Clicked="OnGive" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="contactButton" Text="Contact Us" Clicked="OnContact" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="socialMediaButton" Text="Social Media" Clicked="OnSocialMedia" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="helpButton" Text="Help and Feedback" Clicked="OnHelp" Style="{StaticResource buttonStyle}" />
+          <Label Text="© The Continents Foundation" FontSize="Small" HorizontalTextAlignment="Center" />
     </StackLayout>
    </ScrollView>
 </ContentPage>
