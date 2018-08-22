@@ -24,7 +24,6 @@ namespace Continents
         {
             InitializeComponent();
             Title = "Partners";
-            //LoadArticles();
             LoadPartnersFromWebsite();
 
             NavigationPage.SetBackButtonTitle(this, "Back");
