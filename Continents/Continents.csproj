@@ -76,6 +76,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="AccreditationsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartnersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -123,6 +135,15 @@
     <Compile Include="WebsiteCaller.cs" />
     <Compile Include="ImageUrl.cs" />
     <Compile Include="CalendarEvent.cs" />
+    <Compile Include="AccreditationsPage.xaml.cs">
+      <DependentUpon>AccreditationsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartnersPage.xaml.cs">
+      <DependentUpon>PartnersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectsPage.xaml.cs">
+      <DependentUpon>ProjectsPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="project.json" />

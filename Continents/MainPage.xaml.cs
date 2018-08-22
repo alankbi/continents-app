@@ -40,6 +40,21 @@ namespace Continents
             await Navigation.PushAsync(new GalleryPage());
         }
 
+        async void OnAccreditation()
+        {
+            await Navigation.PushAsync(new AccreditationsPage());
+        }
+
+        async void OnPartners()
+        {
+            await Navigation.PushAsync(new PartnersPage());
+        }
+
+        async void OnProjects()
+        {
+            await Navigation.PushAsync(new ProjectsPage());
+        }
+
         async void OnGive()
         {
             await Navigation.PushAsync(new GivePage());

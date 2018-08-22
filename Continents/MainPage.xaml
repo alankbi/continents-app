@@ -19,6 +19,9 @@
           <Button x:Name="calendarButton" Text="Events" Clicked="OnCalendar" Style="{StaticResource buttonStyle}" />
           <Button x:Name="myCampusButton" Text="My Campus" Clicked="OnMyCampus" Style="{StaticResource buttonStyle}" />
           <Button x:Name="galleryButton" Text="Gallery" Clicked="OnGallery" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="accreditationsButton" Text="Accreditations" Clicked="OnAccreditation" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="partnersButton" Text="Partners" Clicked="OnPartners" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="projectsButton" Text="Projects" Clicked="OnProjects" Style="{StaticResource buttonStyle}" />
           <Button x:Name="giveButton" Text="Give" Clicked="OnGive" Style="{StaticResource buttonStyle}" />
           <Button x:Name="contactButton" Text="Contact Us" Clicked="OnContact" Style="{StaticResource buttonStyle}" />
           <Button x:Name="socialMediaButton" Text="Social Media" Clicked="OnSocialMedia" Style="{StaticResource buttonStyle}" />
