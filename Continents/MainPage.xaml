@@ -37,7 +37,7 @@
         <Button Grid.Row="4" Grid.Column="0" x:Name="giveButton" Text="Give" Clicked="OnGive" Style="{StaticResource buttonStyle}" />
         <Button Grid.Row="4" Grid.Column="1" x:Name="contactButton" Text="Contact Us" Clicked="OnContact" Style="{StaticResource buttonStyle}" />
         <Button Grid.Row="5" Grid.Column="0" x:Name="socialMediaButton" Text="Social Media" Clicked="OnSocialMedia" Style="{StaticResource buttonStyle}" />
-        <Button Grid.Row="5" Grid.Column="1" x:Name="helpButton" Text="Help and Feedback" Clicked="OnHelp" Style="{StaticResource buttonStyle}" />
+        <Button Grid.Row="5" Grid.Column="1" x:Name="helpButton" Text="FAQ" Clicked="OnHelp" Style="{StaticResource buttonStyle}" />
 
     </Grid><Label Text="© The Continents Foundation" FontSize="Small" HorizontalTextAlignment="Center" /></StackLayout>
     <!--</StackLayout>

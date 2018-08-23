@@ -10,8 +10,12 @@ namespace Continents
         public HelpPage()
         {
             InitializeComponent();
-            Title = "Help and Feedback";
+            Title = "FAQ";
             NavigationPage.SetBackButtonTitle(this, "Back");
+            this.Content = new WebView
+            {
+                Source = "https://continents.us/faqs"
+            };
         }
 
         async void OnFeedback()
