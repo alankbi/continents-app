@@ -12,7 +12,7 @@ namespace Continents
             InitializeComponent();
             MainPage = new NavigationPage(new MainPage())
             {
-                BarBackgroundColor = Color.Red, 
+                BarBackgroundColor = Color.Red,
                 BarTextColor = Color.White
             };
         }
