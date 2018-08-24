@@ -20,6 +20,6 @@
         <Frame BorderColor="Gray" HasShadow="false" Padding="0" CornerRadius="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <Editor x:Name="bodyEntry" VerticalOptions="FillAndExpand" />
         </Frame>
-        <Button x:Name="submitEntry" Text="Submit" Clicked="OnSubmit" BackgroundColor="Red" BorderRadius="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="50" TextColor="White" FontAttributes="Bold" FontSize="18" />
+        <Button x:Name="submitEntry" Text="Submit" Clicked="OnSubmit" Style="{StaticResource buttonStyle}" />
      </StackLayout>
 </ContentPage>
