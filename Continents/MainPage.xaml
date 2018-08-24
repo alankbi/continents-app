@@ -14,12 +14,12 @@
                  HorizontalOptions="FillAndExpand"
                  Orientation="Vertical"
                  Spacing="15">
-          <Button x:Name="newsButton" Text="Campus News" Clicked="OnNews" Image="about_image.jpg" Style="{StaticResource buttonStyle}" />
-          <Button x:Name="admissionsButton" Text="Admissions" Clicked="OnAdmissions" Style="{StaticResource buttonStyle}" />
-          <Button x:Name="calendarButton" Text="Events" Clicked="OnCalendar" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="newsButton" ContentLayout="Left,10" Image="news" Text="Campus News" Clicked="OnNews" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="admissionsButton" Text="Admissions" ContentLayout="Left,10" Image="apply" Clicked="OnAdmissions" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="calendarButton" Text="Events" ContentLayout="Left,10" Image="calendar" Clicked="OnCalendar" Style="{StaticResource buttonStyle}" />
           <Button x:Name="myCampusButton" Text="My Campus" Clicked="OnMyCampus" Style="{StaticResource buttonStyle}" />
-          <Button x:Name="galleryButton" Text="Gallery" Clicked="OnGallery" Style="{StaticResource buttonStyle}" />
-          <Button x:Name="accreditationsButton" Text="Accreditations" Clicked="OnAccreditation" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="galleryButton" Text="Gallery" ContentLayout="Left,10" Image="gallery" Clicked="OnGallery" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="accreditationsButton" Text="Accreditations" ContentLayout="Left,10" Image="accreditation" Clicked="OnAccreditation" Style="{StaticResource buttonStyle}" />
           <Button x:Name="partnersButton" Text="Partners" Clicked="OnPartners" Style="{StaticResource buttonStyle}" />
           <Button x:Name="projectsButton" Text="Projects" Clicked="OnProjects" Style="{StaticResource buttonStyle}" />
           <Button x:Name="giveButton" Text="Give" Clicked="OnGive" Style="{StaticResource buttonStyle}" />

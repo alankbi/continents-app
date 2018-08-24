@@ -139,6 +139,16 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon76.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon1024.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon120.png" />
+    <ImageAsset Include="Assets.xcassets\news.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\news.imageset\newspaper-regular.png" />
+    <ImageAsset Include="Assets.xcassets\apply.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\apply.imageset\wpforms-brands.png" />
+    <ImageAsset Include="Assets.xcassets\calendar.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\calendar.imageset\calendar-alt-regular.png" />
+    <ImageAsset Include="Assets.xcassets\gallery.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\gallery.imageset\image-regular.png" />
+    <ImageAsset Include="Assets.xcassets\accreditation.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\accreditation.imageset\check-circle-regular.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -148,6 +158,11 @@
     <Folder Include="Assets.xcassets\youtube.png.imageset\" />
     <Folder Include="Assets.xcassets\linkedin.png.imageset\" />
     <Folder Include="Assets.xcassets\continents_logo.png.imageset\" />
+    <Folder Include="Assets.xcassets\news.imageset\" />
+    <Folder Include="Assets.xcassets\apply.imageset\" />
+    <Folder Include="Assets.xcassets\calendar.imageset\" />
+    <Folder Include="Assets.xcassets\gallery.imageset\" />
+    <Folder Include="Assets.xcassets\accreditation.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
