@@ -149,6 +149,20 @@
     <ImageAsset Include="Assets.xcassets\gallery.imageset\image-regular.png" />
     <ImageAsset Include="Assets.xcassets\accreditation.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\accreditation.imageset\check-circle-regular.png" />
+    <ImageAsset Include="Assets.xcassets\partners.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\partners.imageset\coffee-solid.png" />
+    <ImageAsset Include="Assets.xcassets\projects.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\projects.imageset\briefcase-solid.png" />
+    <ImageAsset Include="Assets.xcassets\give.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\give.imageset\gift-solid.png" />
+    <ImageAsset Include="Assets.xcassets\contact.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\contact.imageset\envelope-regular.png" />
+    <ImageAsset Include="Assets.xcassets\social.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\social.imageset\facebook-brands.png" />
+    <ImageAsset Include="Assets.xcassets\faq.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\faq.imageset\question-circle-solid.png" />
+    <ImageAsset Include="Assets.xcassets\campus.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\campus.imageset\university-solid.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -163,6 +177,13 @@
     <Folder Include="Assets.xcassets\calendar.imageset\" />
     <Folder Include="Assets.xcassets\gallery.imageset\" />
     <Folder Include="Assets.xcassets\accreditation.imageset\" />
+    <Folder Include="Assets.xcassets\partners.imageset\" />
+    <Folder Include="Assets.xcassets\projects.imageset\" />
+    <Folder Include="Assets.xcassets\give.imageset\" />
+    <Folder Include="Assets.xcassets\contact.imageset\" />
+    <Folder Include="Assets.xcassets\social.imageset\" />
+    <Folder Include="Assets.xcassets\faq.imageset\" />
+    <Folder Include="Assets.xcassets\campus.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />

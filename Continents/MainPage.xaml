@@ -14,18 +14,18 @@
                  HorizontalOptions="FillAndExpand"
                  Orientation="Vertical"
                  Spacing="15">
-          <Button x:Name="newsButton" ContentLayout="Left,10" Image="news" Text="Campus News" Clicked="OnNews" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="newsButton" Text="Campus News" ContentLayout="Left,10" Image="news" Clicked="OnNews" Style="{StaticResource buttonStyle}" />
           <Button x:Name="admissionsButton" Text="Admissions" ContentLayout="Left,10" Image="apply" Clicked="OnAdmissions" Style="{StaticResource buttonStyle}" />
           <Button x:Name="calendarButton" Text="Events" ContentLayout="Left,10" Image="calendar" Clicked="OnCalendar" Style="{StaticResource buttonStyle}" />
-          <Button x:Name="myCampusButton" Text="My Campus" Clicked="OnMyCampus" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="myCampusButton" Text="My Campus" ContentLayout="Left,10" Image="campus" Clicked="OnMyCampus" Style="{StaticResource buttonStyle}" />
           <Button x:Name="galleryButton" Text="Gallery" ContentLayout="Left,10" Image="gallery" Clicked="OnGallery" Style="{StaticResource buttonStyle}" />
           <Button x:Name="accreditationsButton" Text="Accreditations" ContentLayout="Left,10" Image="accreditation" Clicked="OnAccreditation" Style="{StaticResource buttonStyle}" />
-          <Button x:Name="partnersButton" Text="Partners" Clicked="OnPartners" Style="{StaticResource buttonStyle}" />
-          <Button x:Name="projectsButton" Text="Projects" Clicked="OnProjects" Style="{StaticResource buttonStyle}" />
-          <Button x:Name="giveButton" Text="Give" Clicked="OnGive" Style="{StaticResource buttonStyle}" />
-          <Button x:Name="contactButton" Text="Contact Us" Clicked="OnContact" Style="{StaticResource buttonStyle}" />
-          <Button x:Name="socialMediaButton" Text="Social Media" Clicked="OnSocialMedia" Style="{StaticResource buttonStyle}" />
-          <Button x:Name="helpButton" Text="FAQ" Clicked="OnHelp" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="partnersButton" Text="Partners" ContentLayout="Left,10" Image="partners" Clicked="OnPartners" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="projectsButton" Text="Projects" ContentLayout="Left,10" Image="projects" Clicked="OnProjects" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="giveButton" Text="Give" ContentLayout="Left,10" Image="give" Clicked="OnGive" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="contactButton" Text="Contact Us" ContentLayout="Left,10" Image="contact" Clicked="OnContact" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="socialMediaButton" Text="Social Media" ContentLayout="Left,10" Image="social" Clicked="OnSocialMedia" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="helpButton" Text="FAQ" ContentLayout="Left,10" Image="faq" Clicked="OnHelp" Style="{StaticResource buttonStyle}" />
           <Label Text="© The Continents Foundation" FontSize="Small" HorizontalTextAlignment="Center" />
     </StackLayout>
    </ScrollView>
