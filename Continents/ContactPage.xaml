@@ -21,5 +21,6 @@
             <Editor x:Name="bodyEntry" VerticalOptions="FillAndExpand" />
         </Frame>
         <Button x:Name="submitEntry" Text="Submit" Clicked="OnSubmit" Style="{StaticResource buttonStyle}" />
-     </StackLayout>
+          <Label Text="© The Continents Foundation" Style="{StaticResource copyright}" />
+    </StackLayout>
 </ContentPage>

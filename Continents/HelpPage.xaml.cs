@@ -48,10 +48,24 @@ namespace Continents
 
             webView = new WebView
             {
-                Source = htmlSource
+                Source = htmlSource,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                HorizontalOptions = LayoutOptions.FillAndExpand
             };
 
-            this.Content = webView;
+            var sLayout = new StackLayout
+            {
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                HorizontalOptions = LayoutOptions.FillAndExpand
+            };
+            sLayout.Children.Add(webView);
+            sLayout.Children.Add(new Label
+            {
+                Text = "© The Continents Foundation",
+                Style = (Style)Application.Current.Resources["copyright"]
+            });
+
+            this.Content = sLayout;
         }
     }
 }
