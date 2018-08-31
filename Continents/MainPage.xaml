@@ -8,7 +8,7 @@
             <On Platform="Android, WinPhone, Windows" Value="20" />
         </OnPlatform>
     </ContentPage.Padding>
-   <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+   <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" VerticalScrollBarVisibility="Never">
     <StackLayout x:Name="sLayout"
                  VerticalOptions="StartAndExpand"
                  HorizontalOptions="FillAndExpand"
