@@ -24,7 +24,7 @@
           <Button x:Name="projectsButton" Text="Projects" ContentLayout="Left,10" Image="projects.png" Clicked="OnProjects" Style="{StaticResource buttonStyle}" />
           <Button x:Name="giveButton" Text="Give" ContentLayout="Left,10" Image="give.png" Clicked="OnGive" Style="{StaticResource buttonStyle}" />
           <Button x:Name="socialMediaButton" Text="Social Media" ContentLayout="Left,10" Image="social.png" Clicked="OnSocialMedia" Style="{StaticResource buttonStyle}" />
-          <Button x:Name="helpButton" Text="FAQ" ContentLayout="Left,10" Image="faq.png" Clicked="OnHelp" Style="{StaticResource buttonStyle}" />
+          <Button x:Name="helpButton" Text="FAQ's" ContentLayout="Left,10" Image="faq.png" Clicked="OnHelp" Style="{StaticResource buttonStyle}" />
           <Button x:Name="contactButton" Text="Contact Us" ContentLayout="Left,10" Image="contact.png" Clicked="OnContact" Style="{StaticResource buttonStyle}" />
           <Label Text="© The Continents Foundation" Style="{StaticResource copyright}" />
     </StackLayout>

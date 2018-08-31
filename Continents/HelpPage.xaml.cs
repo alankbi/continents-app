@@ -23,7 +23,7 @@ namespace Continents
         public HelpPage()
         {
             InitializeComponent();
-            Title = "FAQ";
+            Title = "FAQ's";
             LoadFAQFromWebsite();
 
             NavigationPage.SetBackButtonTitle(this, "Back");
@@ -36,6 +36,7 @@ namespace Continents
 
             var content = doc.DocumentNode.Descendants("div").FirstOrDefault(x => x.Attributes.Contains("class") && x.Attributes["class"].Value.Equals("content-page"));
             doc.DocumentNode.Descendants("div").FirstOrDefault(x => x.Attributes.Contains("class") && x.Attributes["class"].Value.Contains("section-head")).Remove();
+            doc.DocumentNode.Descendants("div").FirstOrDefault(x => x.Attributes.Contains("class") && x.Attributes["class"].Value.Contains("sharing_widgets")).Remove();
 
             var body = doc.DocumentNode.Descendants("body").FirstOrDefault();
             body.RemoveAllChildren();
