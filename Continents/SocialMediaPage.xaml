@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Continents.SocialMediaPage">
     <ContentPage Title="Facebook">
-        <WebView x:Name="webViewFB" Source="https://www.continents.us/link/facebook" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical">
+            <WebView x:Name="webViewFB" Source="https://www.continents.us/link/facebook" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            <Label Text="© The Continents Foundation" Style="{StaticResource copyright}" />
+        </StackLayout>
     </ContentPage>
     <ContentPage Title="Twitter">
-        <WebView x:Name="webViewTW" Source="https://www.continents.us/link/twitter" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical">
+            <WebView x:Name="webViewTW" Source="https://www.continents.us/link/twitter" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            <Label Text="© The Continents Foundation" Style="{StaticResource copyright}" />
+        </StackLayout>
     </ContentPage>
     <ContentPage Title="YouTube">
-        <WebView x:Name="webViewYT" Source="https://www.continents.us/link/youtube" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical">
+            <WebView x:Name="webViewYT" Source="https://www.continents.us/link/youtube" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            <Label Text="© The Continents Foundation" Style="{StaticResource copyright}" />
+        </StackLayout>
     </ContentPage>
     <ContentPage Title="LinkedIn">
-        <WebView x:Name="webViewLI" Source="https://www.continents.us/link/linkedin" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical">
+            <WebView x:Name="webViewLI" Source="https://www.continents.us/link/linkedin" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            <Label Text="© The Continents Foundation" Style="{StaticResource copyright}" />
+        </StackLayout>
     </ContentPage>
 </TabbedPage>
