@@ -12,35 +12,35 @@
                  Orientation="Vertical"
                  Spacing="15">
         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-            <Frame BorderColor="Gray" HasShadow="false" Padding="0" CornerRadius="0" HorizontalOptions="FillAndExpand">
-                <Entry x:Name="firstNameEntry" Placeholder="First Name" HeightRequest="40" HorizontalOptions="FillAndExpand" /> 
-            </Frame>
-            <Frame BorderColor="Gray" HasShadow="false" Padding="0" CornerRadius="0" HorizontalOptions="FillAndExpand">
-                <Entry x:Name="lastNameEntry" Placeholder="Last Name" HeightRequest="40" HorizontalOptions="FillAndExpand" /> 
-            </Frame>
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-            <Frame BorderColor="Gray" HasShadow="false" Padding="0" CornerRadius="0" HorizontalOptions="FillAndExpand">
-                <Entry x:Name="emailEntry" Placeholder="Email" Keyboard="Email" HeightRequest="40" HorizontalOptions="FillAndExpand" /> 
-            </Frame>
-            <Frame BorderColor="Gray" HasShadow="false" Padding="0" CornerRadius="0" HorizontalOptions="FillAndExpand">
-                <Entry x:Name="phoneEntry" Placeholder="Phone" Keyboard="Telephone" HeightRequest="40" HorizontalOptions="FillAndExpand" /> 
-            </Frame>
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-            <Frame BorderColor="Gray" HasShadow="false" Padding="0" CornerRadius="0" HorizontalOptions="FillAndExpand">
-                <Entry x:Name="countryEntry" Placeholder="Country" HeightRequest="40" HorizontalOptions="FillAndExpand" /> 
-            </Frame>
-            <Frame BorderColor="Gray" HasShadow="false" Padding="0" CornerRadius="0" HorizontalOptions="FillAndExpand">
-                <Entry x:Name="cityEntry" Placeholder="City" HeightRequest="40" HorizontalOptions="FillAndExpand" /> 
-            </Frame>
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                <Frame BorderColor="Gray" HasShadow="false" Padding="0" CornerRadius="0" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="firstNameEntry" Placeholder="First Name" HeightRequest="40" HorizontalOptions="FillAndExpand" /> 
+                </Frame>
+                <Frame BorderColor="Gray" HasShadow="false" Padding="0" CornerRadius="0" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="emailEntry" Placeholder="Email" Keyboard="Email" HeightRequest="40" HorizontalOptions="FillAndExpand" /> 
+                </Frame>
+                <Frame BorderColor="Gray" HasShadow="false" Padding="0" CornerRadius="0" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="cityEntry" Placeholder="City" HeightRequest="40" HorizontalOptions="FillAndExpand" /> 
+                </Frame>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                <Frame BorderColor="Gray" HasShadow="false" Padding="0" CornerRadius="0" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="lastNameEntry" Placeholder="Last Name " HeightRequest="40" HorizontalOptions="FillAndExpand" /> 
+                </Frame>
+                <Frame BorderColor="Gray" HasShadow="false" Padding="0" CornerRadius="0" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="phoneEntry" Placeholder="Phone" Keyboard="Telephone" HeightRequest="40" HorizontalOptions="FillAndExpand" /> 
+                </Frame>
+                <Frame BorderColor="Gray" HasShadow="false" Padding="0" CornerRadius="0" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="countryEntry" Placeholder="Country" HeightRequest="40" HorizontalOptions="FillAndExpand" /> 
+                </Frame>
+            </StackLayout>
         </StackLayout>
         <Frame BorderColor="Gray" HasShadow="false" Padding="0" CornerRadius="0">
             <Entry x:Name="subjectEntry" Placeholder="Subject" HeightRequest="40" />
         </Frame>
         <Label Text="Please type your question or comment below:" />
         <Frame BorderColor="Gray" HasShadow="false" Padding="0" CornerRadius="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-            <Editor x:Name="bodyEntry" VerticalOptions="FillAndExpand" HeightRequest="300"/>
+            <Editor x:Name="bodyEntry" VerticalOptions="FillAndExpand" HeightRequest="200"/>
         </Frame>
         <Button x:Name="submitEntry" Text="Submit" Clicked="OnSubmit" Style="{StaticResource buttonStyle}" />
         <Label Text="© The Continents Foundation" Style="{StaticResource copyright}" />
