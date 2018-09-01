@@ -24,7 +24,7 @@ namespace Continents
         {
             InitializeComponent();
             Title = "FAQ's";
-            LoadFAQFromWebsite();
+            //LoadFAQFromWebsite();
 
             NavigationPage.SetBackButtonTitle(this, "Back");
         }

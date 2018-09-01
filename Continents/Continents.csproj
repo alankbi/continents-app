@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -40,10 +39,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="GivePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="ContactPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -68,6 +63,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="GivePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <Compile Include="GivePage.xaml.cs">
+      <DependentUpon>GivePage.xaml</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="HelpPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -102,9 +104,6 @@
     </Compile>
     <Compile Include="NewsPage.xaml.cs">
       <DependentUpon>NewsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="GivePage.xaml.cs">
-      <DependentUpon>GivePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ContactPage.xaml.cs">
       <DependentUpon>ContactPage.xaml</DependentUpon>
