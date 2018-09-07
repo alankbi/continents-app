@@ -7,7 +7,7 @@
 	<key>CFBundleName</key>
 	<string>Continents</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.continents.Continents</string>
+	<string>us.continents.Continents</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -30,8 +30,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
